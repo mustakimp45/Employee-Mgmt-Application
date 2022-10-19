@@ -13,10 +13,10 @@ public class EmployeeDatabaseApplication {
 
 	public static void main(String[] args) {
 
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Please enter your name...");
+//		Scanner sc=new Scanner(System.in);
+//		System.out.println("Please enter your name...");
 		SpringApplication.run(EmployeeDatabaseApplication.class, args);
-		System.out.println("My name is Mustakim");
+//		System.out.println("My name is Mustakim");
 
 	}
 

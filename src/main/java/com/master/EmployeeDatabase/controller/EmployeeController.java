@@ -22,16 +22,13 @@ public class EmployeeController {
 
     @Autowired
     private SessionFactory sessionFactory;
-    
-     @Autowired
-    private SessionFactory sessionFactory1;
-
 
     @Autowired
     private DepartmentRepository departmentRepository;
 
     @Autowired
     private EmployeeService employeeService;
+
 
     @GetMapping("/all")
     public List<Employee> getAllEmployees(){

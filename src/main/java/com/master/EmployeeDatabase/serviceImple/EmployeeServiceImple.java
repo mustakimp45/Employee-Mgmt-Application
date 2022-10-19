@@ -2,6 +2,7 @@ package com.master.EmployeeDatabase.serviceImple;
 
 import com.master.EmployeeDatabase.DTO.EmployeeDTO;
 import com.master.EmployeeDatabase.Service.EmployeeService;
+import com.master.EmployeeDatabase.controller.EmployeeController;
 import com.master.EmployeeDatabase.entity.Department;
 import com.master.EmployeeDatabase.entity.Employee;
 import com.master.EmployeeDatabase.repository.DepartmentRepository;
@@ -26,8 +27,12 @@ public class EmployeeServiceImple implements EmployeeService {
     private SessionFactory sessionFactory;
 
 
+    @Autowired
+    private EmployeeController employeeController;
+
     @Override
     public Employee saveEmployee(Employee employee) {
+
         return employeeRepository.save(employee);
     }
 
